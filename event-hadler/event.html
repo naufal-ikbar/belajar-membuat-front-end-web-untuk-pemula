@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Event World</title>
+
     <style>
       .contents {
         position: fixed;
@@ -18,13 +19,16 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="welcome()">
     <div class="contents" align="center" hidden>
-      <button id="incrementButton">Tekan Aku :</button>
+      <button id="incrementButton" onclick="increment()">Tekan Aku :)</button>
       <h3>
-        Kamu sudah menekan tombol diatas sebanyak <span id="count">0</span>
+        Kamu sudah menekan tombol di atas sebanyak <span id="count">0</span>
       </h3>
     </div>
-    <script src="./event.js"></script>
+
+    <script src="./event.js">
+      // Kode JavaScript kita
+    </script>
   </body>
 </html>
