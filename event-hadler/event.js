@@ -5,7 +5,8 @@ function welcome() {
 }
 
 function increment() {
-  if (Number(document.getElementById("count").innerText) + 1 > 100) {
+  const batasIncrement = 100;
+  if (Number(document.getElementById("count").innerText) + 1 > batasIncrement) {
     return;
   }
 
@@ -23,7 +24,7 @@ function increment() {
 
     const contents = document.querySelector(".contents");
     contents.append(hiddenMessage, image);
-  } else if (document.getElementById("count").innerText == 100) {
+  } else if (document.getElementById("count").innerText == batasIncrement) {
     reset();
   }
 }
@@ -44,3 +45,5 @@ function reset() {
 
 // document.getElementById("incrementButton").onclick = increment;
 // document.body.onload = welcome;
+
+
