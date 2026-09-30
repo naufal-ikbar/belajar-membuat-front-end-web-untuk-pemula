@@ -46,4 +46,6 @@ function reset() {
 // document.getElementById("incrementButton").onclick = increment;
 // document.body.onload = welcome;
 
-
+// kode addEventListener
+window.addEventListener("load", welcome);
+document.getElementById('incrementButton').addEventListener('click', increment);
